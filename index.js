@@ -84,6 +84,6 @@ const init = async() => {
             });
         });
 };
-init(), client.login(config.token).catch(err => {
+init(), client.login(process.env.TOKEN).catch(err => {
     console.log("[Discord login] Please provide a valid discord bot token\n" + err + "")
 });
